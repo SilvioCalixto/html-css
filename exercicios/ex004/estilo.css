@@ -1,0 +1,10 @@
+body{
+    /*Margem esquerda interna*/
+    padding-left: 60px;
+    /*Margem direita interna*/
+    padding-right: 60px;
+    /* Tamanho da fonte (Letra)*/
+    font-size: 16pt;
+    /*Cor do pano de fundo*/
+    background-color: lightgray;
+}

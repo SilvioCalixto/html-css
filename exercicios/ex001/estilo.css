@@ -1,0 +1,36 @@
+h1{
+    color: #ff0000
+}
+p{
+    color: #00ff00
+}
+
+body{
+    background-color: rgb(88, 165, 238)
+}
+.boxazul{
+	width: 300px;
+	height: 40px;
+	background-color: blue;	
+	cursor: pointer;
+	 display: inline-table;
+	
+}
+
+
+.boxrosa{
+	width: 300px;
+	height:40px;
+	background-color: pink;
+	cursor: pointer;
+	 display: inline-table;
+}
+
+.boxamarelo{
+	width: 300px;
+	height: 40px;
+	background-color: yellow;	
+	cursor: pointer;
+	background-color: inline;
+	display: inline-table;
+}

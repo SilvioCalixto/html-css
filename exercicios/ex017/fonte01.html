@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas absolutas
+            cm -> Centímetro, MM -> Milímetro, in -> Polegada, px -> Pixel, pt -> Ponto, pc -> Paica
+            *cm e mm são medidas absolutas mas como existem telas de tamanhos diferentes a apresentação do site pode ser diferente. Até mesmo o Pixel pode ter variação como é o caso das telas de retina da APLLE que um Pixel é considerado 1/4 de Pixel. PT e PC são recomendadas para material que será impresso e não para material que será exibido em tela.
+
+            medidas Relativas
+
+            em -> Medida relativa ao tamanho atual da letra Maiscula de umafonte, ex -> Medida relativa a altura X de uma fonte, rem -> Relativa a fonte que esta configurada no Body, vw -> Relativo a largura da tela, % da View port, vh -> Altura da View port, %
+
+            16px geralmente  = 1em ou seja 2m = 32px
+            */
+            font-size: 1cm;
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: underline;
+            /*
+            Weight-> Peso //variações de pesos= lighter normal bold bolder // Variação numérica = 100 - 900%
+            Width -> Altura
+            Height -> Altura
+
+            Verdana, arial, times não possuem tantas variações
+            */
+        }
+
+        h1 {
+            font-family: 'Work Sans' , sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            /*
+             shorthand
+             - font-style -> font-weight -> font-size -> font-family
+
+             Ao invés de usar as quatro linhas de cima utilize apenas a de baixo, entretanto é necessário que esteja nesta mesma ordem.
+            */
+
+            font: italic bolder 3em 'Work Sans', sans-serif;;
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans';
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facilis ipsam iusto mollitia commodi praesentium possimus vitae deleniti debitis hic voluptatum itaque sit quaerat reprehenderit obcaecati, sed autem vero excepturi!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facilis ipsam iusto mollitia commodi praesentium possimus vitae deleniti debitis hic voluptatum itaque sit quaerat reprehenderit obcaecati, sed autem vero excepturi!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facilis ipsam iusto mollitia commodi praesentium possimus vitae deleniti debitis hic voluptatum itaque sit quaerat reprehenderit obcaecati, sed autem vero excepturi!
+    </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veniam ad. Modi magni assumenda explicabo repudiandae dolore corrupti recusandae molestiae! Numquam asperiores laboriosam magnam ullam delectus hic alias facilis ad?</p>
+</body>
+</html>
