@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="estilos/style.css">
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Código referente ao incone que peguei no site do goole-->
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()"> <!--Comando de quando mudar o tamanho da tela-->
     <header>
         <h1>Meu Site</h1>
-        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span><!--Comando juntamente com o nome do icone para que ele possa ser utilizado-->
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span><!--Comando onclick de  quando clicar juntamente com o nome do icone para que ele possa ser utilizado-->
         <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
@@ -33,8 +34,17 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, et velit tempore repellat asperiores commodi error sint, quaerat consectetur voluptatibus distinctio doloribus provident amet ipsum exercitationem voluptates magnam molestias? Debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt unde nesciunt, culpa quasi eos necessitatibus quaerat qui dolorem aliquid molestiae in eius fugit voluptatibus, adipisci, similique ratione tempora repellendus recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis unde eius necessitatibus cumque architecto! Asperiores voluptas aspernatur, numquam delectus praesentium rerum sit earum non corrupti magnam, amet autem explicabo! Debitis.
             </p>
         </article>
-    </main>
+    </main><!--Se a largura da minha tela for maior do que 768 vou mandar mostrar em bloco forçadamente-->
     <script>
+
+        function mudouTamanho() {
+            if (widow.innerwidth >= 768) { 
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
                 if(itens.style.display == 'block'){
                     itens.style.display = 'none'
